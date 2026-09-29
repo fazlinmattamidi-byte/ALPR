@@ -1,0 +1,96 @@
+{
+  "video": "WhatsApp Video 2026-09-15 at 15.10.37.mp4",
+  "observedText": "BNC15",
+  "found": true,
+  "frameIndex": 177,
+  "timestampSeconds": 5.9,
+  "detectorConfidence": 0.712,
+  "bbox": [
+    227.01,
+    613.82,
+    93.02,
+    32.4
+  ],
+  "comparisons": [
+    {
+      "variant": "detector_tight",
+      "cropSize": [
+        93,
+        32
+      ],
+      "ocrText": "BNC15",
+      "ocrConfidence": 0.9107,
+      "layout": "FULL"
+    },
+    {
+      "variant": "production_padded",
+      "cropSize": [
+        109,
+        40
+      ],
+      "ocrText": "BNC15",
+      "ocrConfidence": 0.9337,
+      "layout": "FULL"
+    },
+    {
+      "variant": "production_inner",
+      "cropSize": [
+        109,
+        40
+      ],
+      "ocrText": "BNC15",
+      "ocrConfidence": 0.8546,
+      "layout": "FULL"
+    },
+    {
+      "variant": "wide_padded",
+      "cropSize": [
+        127,
+        46
+      ],
+      "ocrText": "BNC15",
+      "ocrConfidence": 0.7197,
+      "layout": "FULL"
+    },
+    {
+      "variant": "clahe",
+      "cropSize": [
+        109,
+        40
+      ],
+      "ocrText": "BNC15",
+      "ocrConfidence": 0.8598,
+      "layout": "FULL"
+    },
+    {
+      "variant": "sharpen",
+      "cropSize": [
+        109,
+        40
+      ],
+      "ocrText": "BIC15",
+      "ocrConfidence": 0.8432,
+      "layout": "FULL"
+    },
+    {
+      "variant": "deskew_minus_5",
+      "cropSize": [
+        127,
+        46
+      ],
+      "ocrText": "BNC15",
+      "ocrConfidence": 0.8019,
+      "layout": "FULL"
+    },
+    {
+      "variant": "deskew_plus_5",
+      "cropSize": [
+        127,
+        46
+      ],
+      "ocrText": "BNC15",
+      "ocrConfidence": 0.5908,
+      "layout": "FULL"
+    }
+  ]
+}

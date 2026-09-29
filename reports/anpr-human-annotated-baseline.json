@@ -1,0 +1,1971 @@
+{
+  "configuration": {
+    "sampleFps": 60.0,
+    "confidenceThreshold": 0.24,
+    "detectorModel": "public/models/plate-detector.onnx",
+    "ocrModel": "public/models/ppocr-rec.onnx",
+    "groundTruthUse": "evaluation-only; expected values never enter inference",
+    "annotations": "reports/anpr-human-annotations-v1.json"
+  },
+  "summary": {
+    "videos": 12,
+    "expectedPlates": 19,
+    "recognizedPlates": 11,
+    "videosWithDetectorBoxes": 12,
+    "humanAnnotated": {
+      "labels": 20,
+      "detected": 20,
+      "correctlyRecognized": 4,
+      "missed": 0,
+      "falsePositivesOnFullyAnnotatedFrames": 3
+    }
+  },
+  "results": [
+    {
+      "video": "WhatsApp Video 2026-09-15 at 15.10.37.mp4",
+      "durationSeconds": 6.6,
+      "sourceFps": 30.0,
+      "evaluationFps": 30.0,
+      "expectedPlates": [
+        "BNC115"
+      ],
+      "sampledFrames": 198,
+      "framesWithDetections": 110,
+      "detectionCoverage": 0.556,
+      "firstSceneDetectionSeconds": 0.167,
+      "totalDetections": 127,
+      "maxSimultaneous": 2,
+      "detectorDiagnostics": {
+        "aboveConfidence": 665,
+        "rejectedMinSize": 0,
+        "rejectedAspect": 0,
+        "preNms": 665,
+        "nmsSuppressed": 538,
+        "final": 127
+      },
+      "annotatedEvaluation": {
+        "annotationCount": 1,
+        "detected": 1,
+        "missed": 0,
+        "detectionRecall": 1.0,
+        "correctlyRecognized": 0,
+        "endToEndRecall": 0.0,
+        "falsePositivesOnFullyAnnotatedFrames": 0,
+        "fullyAnnotatedFrameCount": 1,
+        "latencyMs": {
+          "average": null,
+          "p50": null,
+          "p95": null
+        },
+        "rows": [
+          {
+            "annotationId": "gt-001",
+            "plate": "BNC115",
+            "frameIndex": 177,
+            "timestampSeconds": 5.9,
+            "detected": true,
+            "recognized": false,
+            "failureStage": "OCR",
+            "iou": 0.7651,
+            "prediction": {
+              "frameIndex": 177,
+              "timestampSeconds": 5.9,
+              "bbox": [
+                227.0140380859375,
+                613.81640625,
+                93.01938476562498,
+                32.39999999999998
+              ],
+              "detectorConfidence": 0.7119965553283691,
+              "ocrText": "BNC15",
+              "ocrConfidence": 0.9337480783462524,
+              "totalLatencyMs": 67.55058300000094
+            }
+          }
+        ]
+      },
+      "plateResults": [
+        {
+          "plate": "BNC115",
+          "recognized": false,
+          "firstExactReadSeconds": null,
+          "exactReadCount": 0,
+          "closestRead": {
+            "text": "BNC15",
+            "distance": 1,
+            "timestampSeconds": 5.9,
+            "confidence": 0.9337
+          },
+          "failureStage": "OCR_OR_CROP"
+        }
+      ],
+      "exactRecognitionRecall": 0.0,
+      "latencyMs": {
+        "detectorMedian": 50.0,
+        "detectorP95": 52.96,
+        "ocrMedianPerCrop": 72.02,
+        "ocrP95PerCrop": 77.82
+      },
+      "wallTimeSeconds": 16.75,
+      "processingThroughputFps": 11.82,
+      "topRawOcr": [
+        [
+          "BNC15",
+          18
+        ],
+        [
+          "1",
+          7
+        ],
+        [
+          "BNC1",
+          5
+        ],
+        [
+          "SUZUKI",
+          4
+        ],
+        [
+          "8",
+          3
+        ],
+        [
+          "9",
+          2
+        ],
+        [
+          "D",
+          2
+        ],
+        [
+          "TS",
+          1
+        ],
+        [
+          "11",
+          1
+        ],
+        [
+          "3A",
+          1
+        ],
+        [
+          "HTSS7",
+          1
+        ],
+        [
+          "3",
+          1
+        ]
+      ]
+    },
+    {
+      "video": "WhatsApp Video 2026-09-15 at 15.10.38.mp4",
+      "durationSeconds": 2.267,
+      "sourceFps": 30.0,
+      "evaluationFps": 30.0,
+      "expectedPlates": [
+        "SWF3587",
+        "VNN1212"
+      ],
+      "sampledFrames": 68,
+      "framesWithDetections": 68,
+      "detectionCoverage": 1.0,
+      "firstSceneDetectionSeconds": 0.0,
+      "totalDetections": 79,
+      "maxSimultaneous": 3,
+      "detectorDiagnostics": {
+        "aboveConfidence": 619,
+        "rejectedMinSize": 0,
+        "rejectedAspect": 0,
+        "preNms": 619,
+        "nmsSuppressed": 540,
+        "final": 79
+      },
+      "annotatedEvaluation": {
+        "annotationCount": 2,
+        "detected": 2,
+        "missed": 0,
+        "detectionRecall": 1.0,
+        "correctlyRecognized": 1,
+        "endToEndRecall": 0.5,
+        "falsePositivesOnFullyAnnotatedFrames": 0,
+        "fullyAnnotatedFrameCount": 0,
+        "latencyMs": {
+          "average": 67.63,
+          "p50": 67.63,
+          "p95": 67.63
+        },
+        "rows": [
+          {
+            "annotationId": "gt-002",
+            "plate": "VNN1212",
+            "frameIndex": 0,
+            "timestampSeconds": 0.0,
+            "detected": true,
+            "recognized": false,
+            "failureStage": "OCR",
+            "iou": 0.8454,
+            "prediction": {
+              "frameIndex": 0,
+              "timestampSeconds": 0.0,
+              "bbox": [
+                244.098486328125,
+                505.17763671875,
+                94.72119140624997,
+                31.808984375000023
+              ],
+              "detectorConfidence": 0.7666804194450378,
+              "ocrText": "IVM1212",
+              "ocrConfidence": 0.7424100339412689,
+              "totalLatencyMs": 69.50333300000011
+            }
+          },
+          {
+            "annotationId": "gt-003",
+            "plate": "SWF3587",
+            "frameIndex": 60,
+            "timestampSeconds": 2.0,
+            "detected": true,
+            "recognized": true,
+            "failureStage": null,
+            "iou": 0.8067,
+            "prediction": {
+              "frameIndex": 60,
+              "timestampSeconds": 2.0,
+              "bbox": [
+                242.5271484375,
+                526.716748046875,
+                118.05585937500001,
+                33.31210937500009
+              ],
+              "detectorConfidence": 0.6764011383056641,
+              "ocrText": "SWF3587",
+              "ocrConfidence": 0.9466627410479954,
+              "totalLatencyMs": 67.63149900000087
+            }
+          }
+        ]
+      },
+      "plateResults": [
+        {
+          "plate": "SWF3587",
+          "recognized": true,
+          "firstExactReadSeconds": 1.633,
+          "exactReadCount": 14,
+          "closestRead": {
+            "text": "SWF3587",
+            "distance": 0,
+            "timestampSeconds": 1.967,
+            "confidence": 0.9808
+          },
+          "failureStage": null
+        },
+        {
+          "plate": "VNN1212",
+          "recognized": false,
+          "firstExactReadSeconds": null,
+          "exactReadCount": 0,
+          "closestRead": {
+            "text": "VN1212",
+            "distance": 1,
+            "timestampSeconds": 0.2,
+            "confidence": 0.9314
+          },
+          "failureStage": "OCR_OR_CROP"
+        }
+      ],
+      "exactRecognitionRecall": 0.5,
+      "latencyMs": {
+        "detectorMedian": 51.7,
+        "detectorP95": 53.23,
+        "ocrMedianPerCrop": 15.63,
+        "ocrP95PerCrop": 77.7
+      },
+      "wallTimeSeconds": 5.24,
+      "processingThroughputFps": 12.97,
+      "topRawOcr": [
+        [
+          "SWF3587",
+          14
+        ],
+        [
+          "IVM1212",
+          3
+        ],
+        [
+          "V1212",
+          2
+        ],
+        [
+          "VN1212",
+          2
+        ],
+        [
+          "WN1212",
+          2
+        ],
+        [
+          "VW1212",
+          2
+        ],
+        [
+          "2",
+          2
+        ],
+        [
+          "S8",
+          2
+        ],
+        [
+          "SIF3587",
+          2
+        ],
+        [
+          "VM1212",
+          1
+        ],
+        [
+          "VN12312",
+          1
+        ],
+        [
+          "WW1212",
+          1
+        ]
+      ]
+    },
+    {
+      "video": "WhatsApp Video 2026-09-15 at 15.10.40.mp4",
+      "durationSeconds": 3.533,
+      "sourceFps": 30.0,
+      "evaluationFps": 30.0,
+      "expectedPlates": [
+        "ANN7569"
+      ],
+      "sampledFrames": 106,
+      "framesWithDetections": 53,
+      "detectionCoverage": 0.5,
+      "firstSceneDetectionSeconds": 1.567,
+      "totalDetections": 54,
+      "maxSimultaneous": 2,
+      "detectorDiagnostics": {
+        "aboveConfidence": 447,
+        "rejectedMinSize": 0,
+        "rejectedAspect": 0,
+        "preNms": 447,
+        "nmsSuppressed": 393,
+        "final": 54
+      },
+      "annotatedEvaluation": {
+        "annotationCount": 1,
+        "detected": 1,
+        "missed": 0,
+        "detectionRecall": 1.0,
+        "correctlyRecognized": 0,
+        "endToEndRecall": 0.0,
+        "falsePositivesOnFullyAnnotatedFrames": 0,
+        "fullyAnnotatedFrameCount": 1,
+        "latencyMs": {
+          "average": null,
+          "p50": null,
+          "p95": null
+        },
+        "rows": [
+          {
+            "annotationId": "gt-004",
+            "plate": "ANN7569",
+            "frameIndex": 102,
+            "timestampSeconds": 3.4,
+            "detected": true,
+            "recognized": false,
+            "failureStage": "OCR",
+            "iou": 0.7967,
+            "prediction": {
+              "frameIndex": 102,
+              "timestampSeconds": 3.4,
+              "bbox": [
+                225.389453125,
+                528.7641357421875,
+                87.57119140625002,
+                28.221533203124977
+              ],
+              "detectorConfidence": 0.7378726005554199,
+              "ocrText": "AN7569",
+              "ocrConfidence": 0.9949452877044678,
+              "totalLatencyMs": 66.65204200000119
+            }
+          }
+        ]
+      },
+      "plateResults": [
+        {
+          "plate": "ANN7569",
+          "recognized": false,
+          "firstExactReadSeconds": null,
+          "exactReadCount": 0,
+          "closestRead": {
+            "text": "AN7569",
+            "distance": 1,
+            "timestampSeconds": 3.4,
+            "confidence": 0.9949
+          },
+          "failureStage": "OCR_OR_CROP"
+        }
+      ],
+      "exactRecognitionRecall": 0.0,
+      "latencyMs": {
+        "detectorMedian": 50.3,
+        "detectorP95": 51.97,
+        "ocrMedianPerCrop": 15.27,
+        "ocrP95PerCrop": 78.42
+      },
+      "wallTimeSeconds": 6.68,
+      "processingThroughputFps": 15.86,
+      "topRawOcr": [
+        [
+          "AN7569",
+          22
+        ],
+        [
+          "AN769",
+          3
+        ],
+        [
+          "AN759",
+          3
+        ],
+        [
+          "ASS",
+          2
+        ],
+        [
+          "AN7",
+          2
+        ],
+        [
+          "AN7369",
+          2
+        ],
+        [
+          "7529",
+          1
+        ],
+        [
+          "AN76",
+          1
+        ],
+        [
+          "AW7569",
+          1
+        ],
+        [
+          "N7569",
+          1
+        ],
+        [
+          "758820100",
+          1
+        ],
+        [
+          "A87",
+          1
+        ]
+      ]
+    },
+    {
+      "video": "WhatsApp Video 2026-09-15 at 15.10.43.mp4",
+      "durationSeconds": 4.167,
+      "sourceFps": 30.0,
+      "evaluationFps": 30.0,
+      "expectedPlates": [
+        "VPM9310",
+        "WUY6243"
+      ],
+      "sampledFrames": 125,
+      "framesWithDetections": 123,
+      "detectionCoverage": 0.984,
+      "firstSceneDetectionSeconds": 0.0,
+      "totalDetections": 215,
+      "maxSimultaneous": 4,
+      "detectorDiagnostics": {
+        "aboveConfidence": 931,
+        "rejectedMinSize": 0,
+        "rejectedAspect": 0,
+        "preNms": 931,
+        "nmsSuppressed": 716,
+        "final": 215
+      },
+      "annotatedEvaluation": {
+        "annotationCount": 2,
+        "detected": 2,
+        "missed": 0,
+        "detectionRecall": 1.0,
+        "correctlyRecognized": 1,
+        "endToEndRecall": 0.5,
+        "falsePositivesOnFullyAnnotatedFrames": 0,
+        "fullyAnnotatedFrameCount": 0,
+        "latencyMs": {
+          "average": 65.89,
+          "p50": 65.89,
+          "p95": 65.89
+        },
+        "rows": [
+          {
+            "annotationId": "gt-005",
+            "plate": "VPM9310",
+            "frameIndex": 0,
+            "timestampSeconds": 0.0,
+            "detected": true,
+            "recognized": true,
+            "failureStage": null,
+            "iou": 0.796,
+            "prediction": {
+              "frameIndex": 0,
+              "timestampSeconds": 0.0,
+              "bbox": [
+                325.806103515625,
+                524.19345703125,
+                67.52226562499999,
+                26.67724609375
+              ],
+              "detectorConfidence": 0.7617653012275696,
+              "ocrText": "VPM9310",
+              "ocrConfidence": 0.7787789744990212,
+              "totalLatencyMs": 65.89274899999609
+            }
+          },
+          {
+            "annotationId": "gt-006",
+            "plate": "WUY6243",
+            "frameIndex": 60,
+            "timestampSeconds": 2.0,
+            "detected": true,
+            "recognized": false,
+            "failureStage": "OCR",
+            "iou": 0.736,
+            "prediction": {
+              "frameIndex": 60,
+              "timestampSeconds": 2.0,
+              "bbox": [
+                417.6806640625,
+                506.8913330078125,
+                56.61162109374999,
+                34.94545898437502
+              ],
+              "detectorConfidence": 0.5311906337738037,
+              "ocrText": "UYG22",
+              "ocrConfidence": 0.3368096500635147,
+              "totalLatencyMs": 131.95258300000035
+            }
+          }
+        ]
+      },
+      "plateResults": [
+        {
+          "plate": "VPM9310",
+          "recognized": true,
+          "firstExactReadSeconds": 0.0,
+          "exactReadCount": 15,
+          "closestRead": {
+            "text": "VPM9310",
+            "distance": 0,
+            "timestampSeconds": 0.567,
+            "confidence": 0.925
+          },
+          "failureStage": null
+        },
+        {
+          "plate": "WUY6243",
+          "recognized": true,
+          "firstExactReadSeconds": 0.233,
+          "exactReadCount": 2,
+          "closestRead": {
+            "text": "WUY6243",
+            "distance": 0,
+            "timestampSeconds": 0.667,
+            "confidence": 0.7488
+          },
+          "failureStage": null
+        }
+      ],
+      "exactRecognitionRecall": 1.0,
+      "latencyMs": {
+        "detectorMedian": 51.11,
+        "detectorP95": 52.47,
+        "ocrMedianPerCrop": 80.97,
+        "ocrP95PerCrop": 85.3
+      },
+      "wallTimeSeconds": 21.98,
+      "processingThroughputFps": 5.69,
+      "topRawOcr": [
+        [
+          "VPM9310",
+          15
+        ],
+        [
+          "UY6243",
+          7
+        ],
+        [
+          "NUY6243",
+          7
+        ],
+        [
+          "RUY6243",
+          5
+        ],
+        [
+          "MUY6243",
+          4
+        ],
+        [
+          "VPM930",
+          3
+        ],
+        [
+          "VPM310",
+          3
+        ],
+        [
+          "EOR686",
+          3
+        ],
+        [
+          "WUY6243",
+          2
+        ],
+        [
+          "VPR9310",
+          2
+        ],
+        [
+          "VPI9310",
+          2
+        ],
+        [
+          "MY6243",
+          2
+        ]
+      ]
+    },
+    {
+      "video": "WhatsApp Video 2026-09-15 at 15.10.45.mp4",
+      "durationSeconds": 4.167,
+      "sourceFps": 30.0,
+      "evaluationFps": 30.0,
+      "expectedPlates": [
+        "VPX8709",
+        "WTH931"
+      ],
+      "sampledFrames": 125,
+      "framesWithDetections": 111,
+      "detectionCoverage": 0.888,
+      "firstSceneDetectionSeconds": 0.0,
+      "totalDetections": 211,
+      "maxSimultaneous": 3,
+      "detectorDiagnostics": {
+        "aboveConfidence": 1162,
+        "rejectedMinSize": 0,
+        "rejectedAspect": 0,
+        "preNms": 1162,
+        "nmsSuppressed": 951,
+        "final": 211
+      },
+      "annotatedEvaluation": {
+        "annotationCount": 2,
+        "detected": 2,
+        "missed": 0,
+        "detectionRecall": 1.0,
+        "correctlyRecognized": 1,
+        "endToEndRecall": 0.5,
+        "falsePositivesOnFullyAnnotatedFrames": 0,
+        "fullyAnnotatedFrameCount": 0,
+        "latencyMs": {
+          "average": 141.75,
+          "p50": 141.75,
+          "p95": 141.75
+        },
+        "rows": [
+          {
+            "annotationId": "gt-007",
+            "plate": "WTH931",
+            "frameIndex": 30,
+            "timestampSeconds": 1.0,
+            "detected": true,
+            "recognized": true,
+            "failureStage": null,
+            "iou": 0.7399,
+            "prediction": {
+              "frameIndex": 30,
+              "timestampSeconds": 1.0,
+              "bbox": [
+                467.456396484375,
+                534.0597900390625,
+                52.7958984375,
+                25.225732421875023
+              ],
+              "detectorConfidence": 0.740785539150238,
+              "ocrText": "WTH931",
+              "ocrConfidence": 0.785625159740448,
+              "totalLatencyMs": 141.75229100000308
+            }
+          },
+          {
+            "annotationId": "gt-008",
+            "plate": "VPX8709",
+            "frameIndex": 30,
+            "timestampSeconds": 1.0,
+            "detected": true,
+            "recognized": false,
+            "failureStage": "OCR",
+            "iou": 0.7435,
+            "prediction": {
+              "frameIndex": 30,
+              "timestampSeconds": 1.0,
+              "bbox": [
+                71.96929931640625,
+                471.700830078125,
+                59.172631835937494,
+                25.319531249999955
+              ],
+              "detectorConfidence": 0.6008139848709106,
+              "ocrText": "WEX870",
+              "ocrConfidence": 0.3342880035440127,
+              "totalLatencyMs": 142.38825000000332
+            }
+          }
+        ]
+      },
+      "plateResults": [
+        {
+          "plate": "VPX8709",
+          "recognized": true,
+          "firstExactReadSeconds": 0.6,
+          "exactReadCount": 5,
+          "closestRead": {
+            "text": "VPX8709",
+            "distance": 0,
+            "timestampSeconds": 0.6,
+            "confidence": 0.9574
+          },
+          "failureStage": null
+        },
+        {
+          "plate": "WTH931",
+          "recognized": true,
+          "firstExactReadSeconds": 0.033,
+          "exactReadCount": 24,
+          "closestRead": {
+            "text": "WTH931",
+            "distance": 0,
+            "timestampSeconds": 1.133,
+            "confidence": 0.9784
+          },
+          "failureStage": null
+        }
+      ],
+      "exactRecognitionRecall": 1.0,
+      "latencyMs": {
+        "detectorMedian": 58.02,
+        "detectorP95": 60.48,
+        "ocrMedianPerCrop": 88.83,
+        "ocrP95PerCrop": 98.67
+      },
+      "wallTimeSeconds": 23.15,
+      "processingThroughputFps": 5.4,
+      "topRawOcr": [
+        [
+          "WTH931",
+          24
+        ],
+        [
+          "NTH931",
+          9
+        ],
+        [
+          "VPX8709",
+          5
+        ],
+        [
+          "VPX870",
+          3
+        ],
+        [
+          "KTH931",
+          2
+        ],
+        [
+          "PX8709",
+          2
+        ],
+        [
+          "VPX879",
+          2
+        ],
+        [
+          "1",
+          2
+        ],
+        [
+          "YPX8709VPX879",
+          2
+        ],
+        [
+          "EORNN",
+          1
+        ],
+        [
+          "EOA",
+          1
+        ],
+        [
+          "TORURG",
+          1
+        ]
+      ]
+    },
+    {
+      "video": "WhatsApp Video 2026-09-15 at 15.10.48.mp4",
+      "durationSeconds": 6.8,
+      "sourceFps": 30.0,
+      "evaluationFps": 30.0,
+      "expectedPlates": [
+        "ALC9189"
+      ],
+      "sampledFrames": 204,
+      "framesWithDetections": 91,
+      "detectionCoverage": 0.446,
+      "firstSceneDetectionSeconds": 0.0,
+      "totalDetections": 92,
+      "maxSimultaneous": 2,
+      "detectorDiagnostics": {
+        "aboveConfidence": 701,
+        "rejectedMinSize": 0,
+        "rejectedAspect": 0,
+        "preNms": 701,
+        "nmsSuppressed": 609,
+        "final": 92
+      },
+      "annotatedEvaluation": {
+        "annotationCount": 1,
+        "detected": 1,
+        "missed": 0,
+        "detectionRecall": 1.0,
+        "correctlyRecognized": 0,
+        "endToEndRecall": 0.0,
+        "falsePositivesOnFullyAnnotatedFrames": 0,
+        "fullyAnnotatedFrameCount": 0,
+        "latencyMs": {
+          "average": null,
+          "p50": null,
+          "p95": null
+        },
+        "rows": [
+          {
+            "annotationId": "gt-009",
+            "plate": "ALC9189",
+            "frameIndex": 0,
+            "timestampSeconds": 0.0,
+            "detected": true,
+            "recognized": false,
+            "failureStage": "OCR",
+            "iou": 0.7747,
+            "prediction": {
+              "frameIndex": 0,
+              "timestampSeconds": 0.0,
+              "bbox": [
+                462.512255859375,
+                469.8439453125,
+                71.73876953125006,
+                42.65546875000001
+              ],
+              "detectorConfidence": 0.7732295989990234,
+              "ocrText": "ALC98",
+              "ocrConfidence": 0.5054488211870194,
+              "totalLatencyMs": 162.4529999999993
+            }
+          }
+        ]
+      },
+      "plateResults": [
+        {
+          "plate": "ALC9189",
+          "recognized": false,
+          "firstExactReadSeconds": null,
+          "exactReadCount": 0,
+          "closestRead": {
+            "text": "ALC98",
+            "distance": 2,
+            "timestampSeconds": 0.0,
+            "confidence": 0.5054
+          },
+          "failureStage": "OCR_OR_CROP"
+        }
+      ],
+      "exactRecognitionRecall": 0.0,
+      "latencyMs": {
+        "detectorMedian": 70.75,
+        "detectorP95": 73.82,
+        "ocrMedianPerCrop": 104.42,
+        "ocrP95PerCrop": 116.41
+      },
+      "wallTimeSeconds": 22.5,
+      "processingThroughputFps": 9.07,
+      "topRawOcr": [
+        [
+          "VF136",
+          4
+        ],
+        [
+          "VFT136",
+          2
+        ],
+        [
+          "VFIA3",
+          2
+        ],
+        [
+          "VFIA36",
+          2
+        ],
+        [
+          "VFIA",
+          2
+        ],
+        [
+          "VFIAG",
+          2
+        ],
+        [
+          "VFTA36",
+          2
+        ],
+        [
+          "VF1736",
+          2
+        ],
+        [
+          "VFT36",
+          2
+        ],
+        [
+          "ALC98",
+          1
+        ],
+        [
+          "AIC9189ALC9185",
+          1
+        ],
+        [
+          "AIC9189ALG9183",
+          1
+        ]
+      ]
+    },
+    {
+      "video": "WhatsApp Video 2026-09-15 at 15.10.51.mp4",
+      "durationSeconds": 5.533,
+      "sourceFps": 30.0,
+      "evaluationFps": 30.0,
+      "expectedPlates": [
+        "NEA7567",
+        "SJC6080"
+      ],
+      "sampledFrames": 166,
+      "framesWithDetections": 121,
+      "detectionCoverage": 0.729,
+      "firstSceneDetectionSeconds": 0.0,
+      "totalDetections": 220,
+      "maxSimultaneous": 4,
+      "detectorDiagnostics": {
+        "aboveConfidence": 1072,
+        "rejectedMinSize": 0,
+        "rejectedAspect": 0,
+        "preNms": 1072,
+        "nmsSuppressed": 852,
+        "final": 220
+      },
+      "annotatedEvaluation": {
+        "annotationCount": 2,
+        "detected": 2,
+        "missed": 0,
+        "detectionRecall": 1.0,
+        "correctlyRecognized": 1,
+        "endToEndRecall": 0.5,
+        "falsePositivesOnFullyAnnotatedFrames": 0,
+        "fullyAnnotatedFrameCount": 1,
+        "latencyMs": {
+          "average": 174.46,
+          "p50": 174.46,
+          "p95": 174.46
+        },
+        "rows": [
+          {
+            "annotationId": "gt-010",
+            "plate": "SJC6080",
+            "frameIndex": 0,
+            "timestampSeconds": 0.0,
+            "detected": true,
+            "recognized": true,
+            "failureStage": null,
+            "iou": 0.7736,
+            "prediction": {
+              "frameIndex": 0,
+              "timestampSeconds": 0.0,
+              "bbox": [
+                396.86396484375,
+                546.0234130859375,
+                56.77558593750001,
+                23.652587890625
+              ],
+              "detectorConfidence": 0.7061407566070557,
+              "ocrText": "SJC6080",
+              "ocrConfidence": 0.7941398109708514,
+              "totalLatencyMs": 174.45854199999644
+            }
+          },
+          {
+            "annotationId": "gt-011",
+            "plate": "NEA7567",
+            "frameIndex": 0,
+            "timestampSeconds": 0.0,
+            "detected": true,
+            "recognized": false,
+            "failureStage": "OCR",
+            "iou": 0.7208,
+            "prediction": {
+              "frameIndex": 0,
+              "timestampSeconds": 0.0,
+              "bbox": [
+                175.6718017578125,
+                548.122705078125,
+                50.524169921875,
+                19.174023437499955
+              ],
+              "detectorConfidence": 0.4249587655067444,
+              "ocrText": "AEA7567",
+              "ocrConfidence": 0.9688110607010978,
+              "totalLatencyMs": 86.66045800001143
+            }
+          }
+        ]
+      },
+      "plateResults": [
+        {
+          "plate": "NEA7567",
+          "recognized": true,
+          "firstExactReadSeconds": 3.533,
+          "exactReadCount": 1,
+          "closestRead": {
+            "text": "NEA7567",
+            "distance": 0,
+            "timestampSeconds": 3.533,
+            "confidence": 0.773
+          },
+          "failureStage": null
+        },
+        {
+          "plate": "SJC6080",
+          "recognized": true,
+          "firstExactReadSeconds": 0.0,
+          "exactReadCount": 8,
+          "closestRead": {
+            "text": "SJC6080",
+            "distance": 0,
+            "timestampSeconds": 0.033,
+            "confidence": 0.9358
+          },
+          "failureStage": null
+        }
+      ],
+      "exactRecognitionRecall": 1.0,
+      "latencyMs": {
+        "detectorMedian": 74.27,
+        "detectorP95": 76.52,
+        "ocrMedianPerCrop": 25.57,
+        "ocrP95PerCrop": 124.78
+      },
+      "wallTimeSeconds": 28.43,
+      "processingThroughputFps": 5.84,
+      "topRawOcr": [
+        [
+          "AEA7567",
+          42
+        ],
+        [
+          "SUC6080",
+          21
+        ],
+        [
+          "AEA767",
+          16
+        ],
+        [
+          "SJC6080",
+          8
+        ],
+        [
+          "SC600",
+          6
+        ],
+        [
+          "SC6080",
+          5
+        ],
+        [
+          "SUC6090",
+          4
+        ],
+        [
+          "AEA1567",
+          3
+        ],
+        [
+          "X",
+          3
+        ],
+        [
+          "LS",
+          3
+        ],
+        [
+          "AER767",
+          3
+        ],
+        [
+          "SUC600",
+          3
+        ]
+      ]
+    },
+    {
+      "video": "WhatsApp Video 2026-09-18 at 11.05.48.mp4",
+      "durationSeconds": 7.798,
+      "sourceFps": 30.006,
+      "evaluationFps": 30.006,
+      "expectedPlates": [
+        "WC5855E"
+      ],
+      "sampledFrames": 234,
+      "framesWithDetections": 84,
+      "detectionCoverage": 0.359,
+      "firstSceneDetectionSeconds": 0.467,
+      "totalDetections": 92,
+      "maxSimultaneous": 3,
+      "detectorDiagnostics": {
+        "aboveConfidence": 274,
+        "rejectedMinSize": 0,
+        "rejectedAspect": 0,
+        "preNms": 274,
+        "nmsSuppressed": 182,
+        "final": 92
+      },
+      "annotatedEvaluation": {
+        "annotationCount": 1,
+        "detected": 1,
+        "missed": 0,
+        "detectionRecall": 1.0,
+        "correctlyRecognized": 0,
+        "endToEndRecall": 0.0,
+        "falsePositivesOnFullyAnnotatedFrames": 0,
+        "fullyAnnotatedFrameCount": 0,
+        "latencyMs": {
+          "average": null,
+          "p50": null,
+          "p95": null
+        },
+        "rows": [
+          {
+            "annotationId": "gt-012",
+            "plate": "WC5855E",
+            "frameIndex": 210,
+            "timestampSeconds": 7.0,
+            "detected": true,
+            "recognized": false,
+            "failureStage": "OCR",
+            "iou": 0.7354,
+            "prediction": {
+              "frameIndex": 210,
+              "timestampSeconds": 6.9985,
+              "bbox": [
+                318.0610046386719,
+                770.2467651367188,
+                57.57159423828125,
+                31.8848876953125
+              ],
+              "detectorConfidence": 0.6071019768714905,
+              "ocrText": "M385EMO5869H",
+              "ocrConfidence": 0.4970539691192763,
+              "totalLatencyMs": 194.47599999998033
+            }
+          }
+        ]
+      },
+      "plateResults": [
+        {
+          "plate": "WC5855E",
+          "recognized": true,
+          "firstExactReadSeconds": 7.665,
+          "exactReadCount": 1,
+          "closestRead": {
+            "text": "WC5855E",
+            "distance": 0,
+            "timestampSeconds": 7.665,
+            "confidence": 0.4449
+          },
+          "failureStage": null
+        }
+      ],
+      "exactRecognitionRecall": 1.0,
+      "latencyMs": {
+        "detectorMedian": 74.03,
+        "detectorP95": 76.02,
+        "ocrMedianPerCrop": 120.95,
+        "ocrP95PerCrop": 123.92
+      },
+      "wallTimeSeconds": 28.0,
+      "processingThroughputFps": 8.36,
+      "topRawOcr": [
+        [
+          "D",
+          5
+        ],
+        [
+          "VIK636",
+          2
+        ],
+        [
+          "VNK636",
+          2
+        ],
+        [
+          "1D",
+          1
+        ],
+        [
+          "H",
+          1
+        ],
+        [
+          "C",
+          1
+        ],
+        [
+          "YK67",
+          1
+        ],
+        [
+          "I6",
+          1
+        ],
+        [
+          "VAK638",
+          1
+        ],
+        [
+          "VEK6",
+          1
+        ],
+        [
+          "V7",
+          1
+        ],
+        [
+          "VRK63S",
+          1
+        ]
+      ]
+    },
+    {
+      "video": "WhatsApp Video 2026-09-18 at 11.05.50.mp4",
+      "durationSeconds": 3.967,
+      "sourceFps": 60.0,
+      "evaluationFps": 60.0,
+      "expectedPlates": [
+        "AMA4588"
+      ],
+      "sampledFrames": 238,
+      "framesWithDetections": 159,
+      "detectionCoverage": 0.668,
+      "firstSceneDetectionSeconds": 0.0,
+      "totalDetections": 179,
+      "maxSimultaneous": 2,
+      "detectorDiagnostics": {
+        "aboveConfidence": 1223,
+        "rejectedMinSize": 0,
+        "rejectedAspect": 0,
+        "preNms": 1223,
+        "nmsSuppressed": 1044,
+        "final": 179
+      },
+      "annotatedEvaluation": {
+        "annotationCount": 1,
+        "detected": 1,
+        "missed": 0,
+        "detectionRecall": 1.0,
+        "correctlyRecognized": 0,
+        "endToEndRecall": 0.0,
+        "falsePositivesOnFullyAnnotatedFrames": 0,
+        "fullyAnnotatedFrameCount": 0,
+        "latencyMs": {
+          "average": null,
+          "p50": null,
+          "p95": null
+        },
+        "rows": [
+          {
+            "annotationId": "gt-013",
+            "plate": "AMA4588",
+            "frameIndex": 120,
+            "timestampSeconds": 2.0,
+            "detected": true,
+            "recognized": false,
+            "failureStage": "OCR",
+            "iou": 0.7634,
+            "prediction": {
+              "frameIndex": 120,
+              "timestampSeconds": 2.0,
+              "bbox": [
+                458.695556640625,
+                1061.8834838867188,
+                88.454345703125,
+                28.6944580078125
+              ],
+              "detectorConfidence": 0.7186784744262695,
+              "ocrText": "AMA458B",
+              "ocrConfidence": 0.5318303746836526,
+              "totalLatencyMs": 98.179416999983
+            }
+          }
+        ]
+      },
+      "plateResults": [
+        {
+          "plate": "AMA4588",
+          "recognized": true,
+          "firstExactReadSeconds": 0.717,
+          "exactReadCount": 43,
+          "closestRead": {
+            "text": "AMA4588",
+            "distance": 0,
+            "timestampSeconds": 1.883,
+            "confidence": 0.9938
+          },
+          "failureStage": null
+        }
+      ],
+      "exactRecognitionRecall": 1.0,
+      "latencyMs": {
+        "detectorMedian": 73.56,
+        "detectorP95": 76.69,
+        "ocrMedianPerCrop": 26.1,
+        "ocrP95PerCrop": 125.74
+      },
+      "wallTimeSeconds": 30.87,
+      "processingThroughputFps": 7.71,
+      "topRawOcr": [
+        [
+          "AMA4588",
+          43
+        ],
+        [
+          "AMA458",
+          11
+        ],
+        [
+          "AMA45",
+          9
+        ],
+        [
+          "AA4588",
+          6
+        ],
+        [
+          "A45",
+          5
+        ],
+        [
+          "AMA4",
+          5
+        ],
+        [
+          "A4",
+          3
+        ],
+        [
+          "AMA4688",
+          3
+        ],
+        [
+          "AMA469",
+          2
+        ],
+        [
+          "AMA46",
+          2
+        ],
+        [
+          "AMA459",
+          2
+        ],
+        [
+          "AMA4568",
+          2
+        ]
+      ]
+    },
+    {
+      "video": "WhatsApp Video 2026-09-18 at 11.05.54.mp4",
+      "durationSeconds": 7.3,
+      "sourceFps": 30.0,
+      "evaluationFps": 30.0,
+      "expectedPlates": [
+        "BQF902",
+        "VDG5534",
+        "WYS4460"
+      ],
+      "sampledFrames": 219,
+      "framesWithDetections": 219,
+      "detectionCoverage": 1.0,
+      "firstSceneDetectionSeconds": 0.0,
+      "totalDetections": 338,
+      "maxSimultaneous": 2,
+      "detectorDiagnostics": {
+        "aboveConfidence": 3128,
+        "rejectedMinSize": 0,
+        "rejectedAspect": 0,
+        "preNms": 3128,
+        "nmsSuppressed": 2790,
+        "final": 338
+      },
+      "annotatedEvaluation": {
+        "annotationCount": 4,
+        "detected": 4,
+        "missed": 0,
+        "detectionRecall": 1.0,
+        "correctlyRecognized": 0,
+        "endToEndRecall": 0.0,
+        "falsePositivesOnFullyAnnotatedFrames": 0,
+        "fullyAnnotatedFrameCount": 1,
+        "latencyMs": {
+          "average": null,
+          "p50": null,
+          "p95": null
+        },
+        "rows": [
+          {
+            "annotationId": "gt-014",
+            "plate": "WYS4460",
+            "frameIndex": 90,
+            "timestampSeconds": 3.0,
+            "detected": true,
+            "recognized": false,
+            "failureStage": "OCR",
+            "iou": 0.8031,
+            "prediction": {
+              "frameIndex": 90,
+              "timestampSeconds": 3.0,
+              "bbox": [
+                635.2579040527344,
+                588.5238342285156,
+                82.10845947265625,
+                63.38299560546875
+              ],
+              "detectorConfidence": 0.812585711479187,
+              "ocrText": "WYS4",
+              "ocrConfidence": 0.80939120054245,
+              "totalLatencyMs": 190.01916600001323
+            }
+          },
+          {
+            "annotationId": "gt-015",
+            "plate": "BQF902",
+            "frameIndex": 90,
+            "timestampSeconds": 3.0,
+            "detected": true,
+            "recognized": false,
+            "failureStage": "OCR",
+            "iou": 0.8022,
+            "prediction": {
+              "frameIndex": 90,
+              "timestampSeconds": 3.0,
+              "bbox": [
+                72.90330505371094,
+                506.2955780029297,
+                75.96511840820312,
+                54.108917236328125
+              ],
+              "detectorConfidence": 0.7943578362464905,
+              "ocrText": "BOF2",
+              "ocrConfidence": 0.30723465606570244,
+              "totalLatencyMs": 189.35987500000806
+            }
+          },
+          {
+            "annotationId": "gt-016",
+            "plate": "BQF902",
+            "frameIndex": 150,
+            "timestampSeconds": 5.0,
+            "detected": true,
+            "recognized": false,
+            "failureStage": "OCR",
+            "iou": 0.8252,
+            "prediction": {
+              "frameIndex": 150,
+              "timestampSeconds": 5.0,
+              "bbox": [
+                330.9573669433594,
+                501.72267150878906,
+                119.23541259765625,
+                70.86520385742188
+              ],
+              "detectorConfidence": 0.7560521364212036,
+              "ocrText": "BOF9020",
+              "ocrConfidence": 0.646340976158778,
+              "totalLatencyMs": 189.1129579999813
+            }
+          },
+          {
+            "annotationId": "gt-017",
+            "plate": "VDG5534",
+            "frameIndex": 150,
+            "timestampSeconds": 5.0,
+            "detected": true,
+            "recognized": false,
+            "failureStage": "OCR",
+            "iou": 0.7594,
+            "prediction": {
+              "frameIndex": 150,
+              "timestampSeconds": 5.0,
+              "bbox": [
+                51.04194641113281,
+                446.00830078125,
+                75.99362182617188,
+                43.64971923828125
+              ],
+              "detectorConfidence": 0.6386908888816833,
+              "ocrText": "VDG6536",
+              "ocrConfidence": 0.638414170060839,
+              "totalLatencyMs": 188.90295899998932
+            }
+          }
+        ]
+      },
+      "plateResults": [
+        {
+          "plate": "BQF902",
+          "recognized": false,
+          "firstExactReadSeconds": null,
+          "exactReadCount": 0,
+          "closestRead": {
+            "text": "BOF902",
+            "distance": 1,
+            "timestampSeconds": 6.067,
+            "confidence": 0.7833
+          },
+          "failureStage": "OCR_OR_CROP"
+        },
+        {
+          "plate": "VDG5534",
+          "recognized": false,
+          "firstExactReadSeconds": null,
+          "exactReadCount": 0,
+          "closestRead": {
+            "text": "VDG534",
+            "distance": 1,
+            "timestampSeconds": 6.367,
+            "confidence": 0.6664
+          },
+          "failureStage": "OCR_OR_CROP"
+        },
+        {
+          "plate": "WYS4460",
+          "recognized": false,
+          "firstExactReadSeconds": null,
+          "exactReadCount": 0,
+          "closestRead": {
+            "text": "WYS460",
+            "distance": 1,
+            "timestampSeconds": 1.333,
+            "confidence": 0.8738
+          },
+          "failureStage": "OCR_OR_CROP"
+        }
+      ],
+      "exactRecognitionRecall": 0.0,
+      "latencyMs": {
+        "detectorMedian": 73.56,
+        "detectorP95": 75.74,
+        "ocrMedianPerCrop": 116.34,
+        "ocrP95PerCrop": 123.08
+      },
+      "wallTimeSeconds": 53.58,
+      "processingThroughputFps": 4.09,
+      "topRawOcr": [
+        [
+          "SYQ9096",
+          33
+        ],
+        [
+          "WYS460",
+          18
+        ],
+        [
+          "VOG53",
+          18
+        ],
+        [
+          "BOF902",
+          11
+        ],
+        [
+          "BOE902BUF902",
+          8
+        ],
+        [
+          "VOG534",
+          8
+        ],
+        [
+          "BOF902BUF902",
+          7
+        ],
+        [
+          "BOF9022",
+          6
+        ],
+        [
+          "VOG5",
+          6
+        ],
+        [
+          "WYS46",
+          5
+        ],
+        [
+          "Y460",
+          4
+        ],
+        [
+          "BOF90202",
+          4
+        ]
+      ]
+    },
+    {
+      "video": "WhatsApp Video 2026-09-18 at 11.05.56.mp4",
+      "durationSeconds": 5.033,
+      "sourceFps": 30.0,
+      "evaluationFps": 30.0,
+      "expectedPlates": [
+        "VGA1268",
+        "VME7108"
+      ],
+      "sampledFrames": 151,
+      "framesWithDetections": 117,
+      "detectionCoverage": 0.775,
+      "firstSceneDetectionSeconds": 0.0,
+      "totalDetections": 223,
+      "maxSimultaneous": 5,
+      "detectorDiagnostics": {
+        "aboveConfidence": 1538,
+        "rejectedMinSize": 0,
+        "rejectedAspect": 0,
+        "preNms": 1538,
+        "nmsSuppressed": 1315,
+        "final": 223
+      },
+      "annotatedEvaluation": {
+        "annotationCount": 2,
+        "detected": 2,
+        "missed": 0,
+        "detectionRecall": 1.0,
+        "correctlyRecognized": 0,
+        "endToEndRecall": 0.0,
+        "falsePositivesOnFullyAnnotatedFrames": 0,
+        "fullyAnnotatedFrameCount": 0,
+        "latencyMs": {
+          "average": null,
+          "p50": null,
+          "p95": null
+        },
+        "rows": [
+          {
+            "annotationId": "gt-018",
+            "plate": "VME7108",
+            "frameIndex": 150,
+            "timestampSeconds": 5.0,
+            "detected": true,
+            "recognized": false,
+            "failureStage": "OCR",
+            "iou": 0.9219,
+            "prediction": {
+              "frameIndex": 150,
+              "timestampSeconds": 5.0,
+              "bbox": [
+                49.45672607421875,
+                750.9765625,
+                236.18011474609375,
+                218.0394287109375
+              ],
+              "detectorConfidence": 0.7864153385162354,
+              "ocrText": "VME70",
+              "ocrConfidence": 0.7842061966657639,
+              "totalLatencyMs": 190.3577089999544
+            }
+          },
+          {
+            "annotationId": "gt-019",
+            "plate": "VGA1268",
+            "frameIndex": 150,
+            "timestampSeconds": 5.0,
+            "detected": true,
+            "recognized": false,
+            "failureStage": "OCR",
+            "iou": 0.7342,
+            "prediction": {
+              "frameIndex": 150,
+              "timestampSeconds": 5.0,
+              "bbox": [
+                547.467529296875,
+                528.8852233886719,
+                66.7109375,
+                29.31768798828125
+              ],
+              "detectorConfidence": 0.7043919563293457,
+              "ocrText": "VGA126",
+              "ocrConfidence": 0.8488714347283045,
+              "totalLatencyMs": 192.12629200001174
+            }
+          }
+        ]
+      },
+      "plateResults": [
+        {
+          "plate": "VGA1268",
+          "recognized": true,
+          "firstExactReadSeconds": 3.567,
+          "exactReadCount": 7,
+          "closestRead": {
+            "text": "VGA1268",
+            "distance": 0,
+            "timestampSeconds": 4.333,
+            "confidence": 0.9158
+          },
+          "failureStage": null
+        },
+        {
+          "plate": "VME7108",
+          "recognized": true,
+          "firstExactReadSeconds": 4.633,
+          "exactReadCount": 4,
+          "closestRead": {
+            "text": "VME7108",
+            "distance": 0,
+            "timestampSeconds": 4.933,
+            "confidence": 0.7593
+          },
+          "failureStage": null
+        }
+      ],
+      "exactRecognitionRecall": 1.0,
+      "latencyMs": {
+        "detectorMedian": 73.51,
+        "detectorP95": 74.96,
+        "ocrMedianPerCrop": 116.0,
+        "ocrP95PerCrop": 122.09
+      },
+      "wallTimeSeconds": 29.01,
+      "processingThroughputFps": 5.2,
+      "topRawOcr": [
+        [
+          "VGA126",
+          23
+        ],
+        [
+          "MCT8619",
+          17
+        ],
+        [
+          "00769",
+          12
+        ],
+        [
+          "VNF3296",
+          11
+        ],
+        [
+          "0076",
+          7
+        ],
+        [
+          "VGA1268",
+          7
+        ],
+        [
+          "CFJ66",
+          4
+        ],
+        [
+          "VF3296",
+          4
+        ],
+        [
+          "VME708",
+          4
+        ],
+        [
+          "VME7108",
+          4
+        ],
+        [
+          "0769",
+          3
+        ],
+        [
+          "0069",
+          3
+        ]
+      ]
+    },
+    {
+      "video": "WhatsApp Video 2026-09-18 at 11.05.59.mp4",
+      "durationSeconds": 4.167,
+      "sourceFps": 30.0,
+      "evaluationFps": 30.0,
+      "expectedPlates": [
+        "WAM1284"
+      ],
+      "sampledFrames": 125,
+      "framesWithDetections": 50,
+      "detectionCoverage": 0.4,
+      "firstSceneDetectionSeconds": 0.0,
+      "totalDetections": 90,
+      "maxSimultaneous": 4,
+      "detectorDiagnostics": {
+        "aboveConfidence": 353,
+        "rejectedMinSize": 0,
+        "rejectedAspect": 0,
+        "preNms": 353,
+        "nmsSuppressed": 263,
+        "final": 90
+      },
+      "annotatedEvaluation": {
+        "annotationCount": 1,
+        "detected": 1,
+        "missed": 0,
+        "detectionRecall": 1.0,
+        "correctlyRecognized": 0,
+        "endToEndRecall": 0.0,
+        "falsePositivesOnFullyAnnotatedFrames": 3,
+        "fullyAnnotatedFrameCount": 1,
+        "latencyMs": {
+          "average": null,
+          "p50": null,
+          "p95": null
+        },
+        "rows": [
+          {
+            "annotationId": "gt-020",
+            "plate": "WAM1284",
+            "frameIndex": 103,
+            "timestampSeconds": 3.4333,
+            "detected": true,
+            "recognized": false,
+            "failureStage": "OCR",
+            "iou": 0.8412,
+            "prediction": {
+              "frameIndex": 103,
+              "timestampSeconds": 3.4333,
+              "bbox": [
+                266.0718078613281,
+                824.4530029296875,
+                82.06463623046875,
+                62.9473876953125
+              ],
+              "detectorConfidence": 0.27910739183425903,
+              "ocrText": "IAM1284",
+              "ocrConfidence": 0.3169846683740616,
+              "totalLatencyMs": 192.90579099998695
+            }
+          }
+        ]
+      },
+      "plateResults": [
+        {
+          "plate": "WAM1284",
+          "recognized": false,
+          "firstExactReadSeconds": null,
+          "exactReadCount": 0,
+          "closestRead": {
+            "text": "IAM1284",
+            "distance": 1,
+            "timestampSeconds": 3.433,
+            "confidence": 0.317
+          },
+          "failureStage": "OCR_OR_CROP"
+        }
+      ],
+      "exactRecognitionRecall": 0.0,
+      "latencyMs": {
+        "detectorMedian": 73.0,
+        "detectorP95": 74.54,
+        "ocrMedianPerCrop": 118.26,
+        "ocrP95PerCrop": 121.88
+      },
+      "wallTimeSeconds": 20.02,
+      "processingThroughputFps": 6.24,
+      "topRawOcr": [
+        [
+          "FELEE",
+          8
+        ],
+        [
+          "FELLE",
+          4
+        ],
+        [
+          "PODAPUDR",
+          3
+        ],
+        [
+          "DH",
+          3
+        ],
+        [
+          "DDH",
+          3
+        ],
+        [
+          "D0",
+          2
+        ],
+        [
+          "IM1284",
+          2
+        ],
+        [
+          "IAM1284",
+          2
+        ],
+        [
+          "DODAPUDI",
+          2
+        ],
+        [
+          "WO5A",
+          1
+        ],
+        [
+          "WO554",
+          1
+        ],
+        [
+          "WO5574",
+          1
+        ]
+      ]
+    }
+  ]
+}

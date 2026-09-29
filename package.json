@@ -1,0 +1,50 @@
+{
+  "name": "plateq-app",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --webpack -H 0.0.0.0",
+    "dev:https": "next dev --webpack --experimental-https -H 0.0.0.0",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint",
+    "test": "vitest run",
+    "benchmark:videos": "python3 scripts/benchmark_training_videos.py",
+    "prepare:environment": "python3 scripts/prepare_bdd100k_environment_cls.py",
+    "train:environment": "python3 train_environment_model.py",
+    "prepare:quality": "python3 scripts/prepare_plate_quality_cls.py",
+    "train:quality": "python3 train_plate_quality_model.py"
+  },
+  "dependencies": {
+    "@hookform/resolvers": "^5.5.5",
+    "@tanstack/react-table": "^8.21.3",
+    "canvas-confetti": "^1.9.4",
+    "clsx": "^2.1.1",
+    "framer-motion": "^12.42.2",
+    "lucide-react": "^1.27.0",
+    "next": "^16.2.11",
+    "onnxruntime-web": "^1.27.0",
+    "papaparse": "^5.5.4",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "react-hook-form": "^7.83.0",
+    "tailwind-merge": "^3.6.0",
+    "tesseract.js": "^5.1.1",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.3.3",
+    "@types/canvas-confetti": "^1.9.0",
+    "@types/node": "^20.19.43",
+    "@types/papaparse": "^5.5.2",
+    "@types/react": "^19.2.17",
+    "@types/react-dom": "^19.2.3",
+    "autoprefixer": "^10.5.4",
+    "eslint": "^9.39.5",
+    "eslint-config-next": "^16.2.11",
+    "postcss": "^8.5.23",
+    "tailwindcss": "^4.3.3",
+    "typescript": "^5.9.3",
+    "vitest": "^1.6.1"
+  }
+}

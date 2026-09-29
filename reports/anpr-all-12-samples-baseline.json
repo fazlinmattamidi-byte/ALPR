@@ -1,0 +1,950 @@
+{
+  "configuration": {
+    "sampleFps": 8.0,
+    "confidenceThreshold": 0.24,
+    "detectorModel": "public/models/plate-detector.onnx",
+    "ocrModel": "public/models/ppocr-rec.onnx",
+    "groundTruthUse": "evaluation-only; expected values never enter inference",
+    "annotations": null
+  },
+  "summary": {
+    "videos": 12,
+    "expectedPlates": 0,
+    "recognizedPlates": 0,
+    "videosWithDetectorBoxes": 12
+  },
+  "results": [
+    {
+      "video": "WhatsApp Video 2026-09-15 at 15.10.37.mp4",
+      "durationSeconds": 6.6,
+      "sourceFps": 30.0,
+      "evaluationFps": 7.5,
+      "expectedPlates": [],
+      "sampledFrames": 50,
+      "framesWithDetections": 25,
+      "detectionCoverage": 0.5,
+      "firstSceneDetectionSeconds": 0.4,
+      "totalDetections": 27,
+      "maxSimultaneous": 2,
+      "detectorDiagnostics": {
+        "aboveConfidence": 153,
+        "rejectedMinSize": 0,
+        "rejectedAspect": 0,
+        "preNms": 153,
+        "nmsSuppressed": 126,
+        "final": 27
+      },
+      "plateResults": [],
+      "exactRecognitionRecall": null,
+      "latencyMs": {
+        "detectorMedian": 47.95,
+        "detectorP95": 50.69,
+        "ocrMedianPerCrop": 69.53,
+        "ocrP95PerCrop": 73.21
+      },
+      "wallTimeSeconds": 3.84,
+      "processingThroughputFps": 13.03,
+      "topRawOcr": [
+        [
+          "BNC15",
+          5
+        ],
+        [
+          "11",
+          1
+        ],
+        [
+          "1",
+          1
+        ],
+        [
+          "HTSS7",
+          1
+        ],
+        [
+          "1X8843",
+          1
+        ],
+        [
+          "WR769G",
+          1
+        ],
+        [
+          "SUZUKI",
+          1
+        ],
+        [
+          "BNC1",
+          1
+        ]
+      ]
+    },
+    {
+      "video": "WhatsApp Video 2026-09-15 at 15.10.38.mp4",
+      "durationSeconds": 2.267,
+      "sourceFps": 30.0,
+      "evaluationFps": 7.5,
+      "expectedPlates": [],
+      "sampledFrames": 17,
+      "framesWithDetections": 17,
+      "detectionCoverage": 1.0,
+      "firstSceneDetectionSeconds": 0.0,
+      "totalDetections": 20,
+      "maxSimultaneous": 3,
+      "detectorDiagnostics": {
+        "aboveConfidence": 160,
+        "rejectedMinSize": 0,
+        "rejectedAspect": 0,
+        "preNms": 160,
+        "nmsSuppressed": 140,
+        "final": 20
+      },
+      "plateResults": [],
+      "exactRecognitionRecall": null,
+      "latencyMs": {
+        "detectorMedian": 48.62,
+        "detectorP95": 63.9,
+        "ocrMedianPerCrop": 14.14,
+        "ocrP95PerCrop": 70.61
+      },
+      "wallTimeSeconds": 1.32,
+      "processingThroughputFps": 12.91,
+      "topRawOcr": [
+        [
+          "SWF3587",
+          3
+        ],
+        [
+          "IVM1212",
+          1
+        ],
+        [
+          "V1212",
+          1
+        ],
+        [
+          "VN12312",
+          1
+        ],
+        [
+          "VW1212",
+          1
+        ],
+        [
+          "26",
+          1
+        ],
+        [
+          "SHF2587",
+          1
+        ],
+        [
+          "SHF3587",
+          1
+        ],
+        [
+          "SNIF3587",
+          1
+        ]
+      ]
+    },
+    {
+      "video": "WhatsApp Video 2026-09-15 at 15.10.40.mp4",
+      "durationSeconds": 3.533,
+      "sourceFps": 30.0,
+      "evaluationFps": 7.5,
+      "expectedPlates": [],
+      "sampledFrames": 27,
+      "framesWithDetections": 13,
+      "detectionCoverage": 0.481,
+      "firstSceneDetectionSeconds": 1.733,
+      "totalDetections": 13,
+      "maxSimultaneous": 1,
+      "detectorDiagnostics": {
+        "aboveConfidence": 110,
+        "rejectedMinSize": 0,
+        "rejectedAspect": 0,
+        "preNms": 110,
+        "nmsSuppressed": 97,
+        "final": 13
+      },
+      "plateResults": [],
+      "exactRecognitionRecall": null,
+      "latencyMs": {
+        "detectorMedian": 48.73,
+        "detectorP95": 58.86,
+        "ocrMedianPerCrop": 15.66,
+        "ocrP95PerCrop": 73.75
+      },
+      "wallTimeSeconds": 1.73,
+      "processingThroughputFps": 15.65,
+      "topRawOcr": [
+        [
+          "AN7569",
+          5
+        ],
+        [
+          "AN76",
+          1
+        ],
+        [
+          "ASS",
+          1
+        ],
+        [
+          "A8",
+          1
+        ],
+        [
+          "A878",
+          1
+        ],
+        [
+          "AN7589",
+          1
+        ],
+        [
+          "AN78",
+          1
+        ],
+        [
+          "AN7369",
+          1
+        ],
+        [
+          "AN759",
+          1
+        ]
+      ]
+    },
+    {
+      "video": "WhatsApp Video 2026-09-15 at 15.10.43.mp4",
+      "durationSeconds": 4.167,
+      "sourceFps": 30.0,
+      "evaluationFps": 7.5,
+      "expectedPlates": [],
+      "sampledFrames": 32,
+      "framesWithDetections": 32,
+      "detectionCoverage": 1.0,
+      "firstSceneDetectionSeconds": 0.0,
+      "totalDetections": 53,
+      "maxSimultaneous": 4,
+      "detectorDiagnostics": {
+        "aboveConfidence": 222,
+        "rejectedMinSize": 0,
+        "rejectedAspect": 0,
+        "preNms": 222,
+        "nmsSuppressed": 169,
+        "final": 53
+      },
+      "plateResults": [],
+      "exactRecognitionRecall": null,
+      "latencyMs": {
+        "detectorMedian": 48.01,
+        "detectorP95": 50.38,
+        "ocrMedianPerCrop": 71.53,
+        "ocrP95PerCrop": 76.65
+      },
+      "wallTimeSeconds": 5.07,
+      "processingThroughputFps": 6.32,
+      "topRawOcr": [
+        [
+          "VPM9310",
+          3
+        ],
+        [
+          "UY6243",
+          3
+        ],
+        [
+          "VM9310",
+          1
+        ],
+        [
+          "VPM310",
+          1
+        ],
+        [
+          "MUF249",
+          1
+        ],
+        [
+          "O",
+          1
+        ],
+        [
+          "VFM9310",
+          1
+        ],
+        [
+          "WUY6243",
+          1
+        ],
+        [
+          "VPM3310",
+          1
+        ],
+        [
+          "VPR9310",
+          1
+        ],
+        [
+          "VI9310",
+          1
+        ],
+        [
+          "AU164",
+          1
+        ]
+      ]
+    },
+    {
+      "video": "WhatsApp Video 2026-09-15 at 15.10.45.mp4",
+      "durationSeconds": 4.167,
+      "sourceFps": 30.0,
+      "evaluationFps": 7.5,
+      "expectedPlates": [],
+      "sampledFrames": 32,
+      "framesWithDetections": 27,
+      "detectionCoverage": 0.844,
+      "firstSceneDetectionSeconds": 0.0,
+      "totalDetections": 51,
+      "maxSimultaneous": 3,
+      "detectorDiagnostics": {
+        "aboveConfidence": 289,
+        "rejectedMinSize": 0,
+        "rejectedAspect": 0,
+        "preNms": 289,
+        "nmsSuppressed": 238,
+        "final": 51
+      },
+      "plateResults": [],
+      "exactRecognitionRecall": null,
+      "latencyMs": {
+        "detectorMedian": 48.42,
+        "detectorP95": 50.58,
+        "ocrMedianPerCrop": 72.13,
+        "ocrP95PerCrop": 77.8
+      },
+      "wallTimeSeconds": 4.78,
+      "processingThroughputFps": 6.69,
+      "topRawOcr": [
+        [
+          "WTH931",
+          6
+        ],
+        [
+          "NTH931",
+          3
+        ],
+        [
+          "EORNN",
+          1
+        ],
+        [
+          "KTH931",
+          1
+        ],
+        [
+          "EORENG",
+          1
+        ],
+        [
+          "INIGITALSAPURDIGIL",
+          1
+        ],
+        [
+          "IRGITALSAPURDIGHA",
+          1
+        ],
+        [
+          "N98709",
+          1
+        ],
+        [
+          "WIDDGITALSAPURDIGIAE",
+          1
+        ],
+        [
+          "VPX8709",
+          1
+        ],
+        [
+          "YIRDIGITALSAPURDIGIE",
+          1
+        ],
+        [
+          "VPX879",
+          1
+        ]
+      ]
+    },
+    {
+      "video": "WhatsApp Video 2026-09-15 at 15.10.48.mp4",
+      "durationSeconds": 6.8,
+      "sourceFps": 30.0,
+      "evaluationFps": 7.5,
+      "expectedPlates": [],
+      "sampledFrames": 51,
+      "framesWithDetections": 24,
+      "detectionCoverage": 0.471,
+      "firstSceneDetectionSeconds": 0.0,
+      "totalDetections": 25,
+      "maxSimultaneous": 2,
+      "detectorDiagnostics": {
+        "aboveConfidence": 189,
+        "rejectedMinSize": 0,
+        "rejectedAspect": 0,
+        "preNms": 189,
+        "nmsSuppressed": 164,
+        "final": 25
+      },
+      "plateResults": [],
+      "exactRecognitionRecall": null,
+      "latencyMs": {
+        "detectorMedian": 48.6,
+        "detectorP95": 50.03,
+        "ocrMedianPerCrop": 72.5,
+        "ocrP95PerCrop": 77.54
+      },
+      "wallTimeSeconds": 4.0,
+      "processingThroughputFps": 12.74,
+      "topRawOcr": [
+        [
+          "ALC98",
+          1
+        ],
+        [
+          "AC9",
+          1
+        ],
+        [
+          "CALC9189ALCSIO",
+          1
+        ],
+        [
+          "CALOLALC",
+          1
+        ],
+        [
+          "VEYE",
+          1
+        ],
+        [
+          "MEVF138",
+          1
+        ],
+        [
+          "VE1438",
+          1
+        ],
+        [
+          "LVEL43836",
+          1
+        ],
+        [
+          "LYEI436EO",
+          1
+        ],
+        [
+          "VFT136",
+          1
+        ],
+        [
+          "VF146",
+          1
+        ],
+        [
+          "VFIA36",
+          1
+        ]
+      ]
+    },
+    {
+      "video": "WhatsApp Video 2026-09-15 at 15.10.51.mp4",
+      "durationSeconds": 5.533,
+      "sourceFps": 30.0,
+      "evaluationFps": 7.5,
+      "expectedPlates": [],
+      "sampledFrames": 42,
+      "framesWithDetections": 31,
+      "detectionCoverage": 0.738,
+      "firstSceneDetectionSeconds": 0.0,
+      "totalDetections": 56,
+      "maxSimultaneous": 4,
+      "detectorDiagnostics": {
+        "aboveConfidence": 282,
+        "rejectedMinSize": 0,
+        "rejectedAspect": 0,
+        "preNms": 282,
+        "nmsSuppressed": 226,
+        "final": 56
+      },
+      "plateResults": [],
+      "exactRecognitionRecall": null,
+      "latencyMs": {
+        "detectorMedian": 49.26,
+        "detectorP95": 51.09,
+        "ocrMedianPerCrop": 17.4,
+        "ocrP95PerCrop": 77.31
+      },
+      "wallTimeSeconds": 4.76,
+      "processingThroughputFps": 8.83,
+      "topRawOcr": [
+        [
+          "AEA7567",
+          11
+        ],
+        [
+          "SUC6080",
+          6
+        ],
+        [
+          "AEA767",
+          4
+        ],
+        [
+          "SJC6080",
+          3
+        ],
+        [
+          "X",
+          2
+        ],
+        [
+          "ES",
+          2
+        ],
+        [
+          "SC600",
+          2
+        ],
+        [
+          "FA7567",
+          1
+        ],
+        [
+          "AEAT567",
+          1
+        ],
+        [
+          "5525383236",
+          1
+        ],
+        [
+          "639",
+          1
+        ],
+        [
+          "748",
+          1
+        ]
+      ]
+    },
+    {
+      "video": "WhatsApp Video 2026-09-18 at 11.05.48.mp4",
+      "durationSeconds": 7.798,
+      "sourceFps": 30.006,
+      "evaluationFps": 7.502,
+      "expectedPlates": [],
+      "sampledFrames": 59,
+      "framesWithDetections": 22,
+      "detectionCoverage": 0.373,
+      "firstSceneDetectionSeconds": 0.533,
+      "totalDetections": 24,
+      "maxSimultaneous": 3,
+      "detectorDiagnostics": {
+        "aboveConfidence": 64,
+        "rejectedMinSize": 0,
+        "rejectedAspect": 0,
+        "preNms": 64,
+        "nmsSuppressed": 40,
+        "final": 24
+      },
+      "plateResults": [],
+      "exactRecognitionRecall": null,
+      "latencyMs": {
+        "detectorMedian": 48.99,
+        "detectorP95": 51.13,
+        "ocrMedianPerCrop": 75.15,
+        "ocrP95PerCrop": 79.38
+      },
+      "wallTimeSeconds": 4.81,
+      "processingThroughputFps": 12.26,
+      "topRawOcr": [
+        [
+          "D",
+          2
+        ],
+        [
+          "1D",
+          1
+        ],
+        [
+          "YK67",
+          1
+        ],
+        [
+          "I6",
+          1
+        ],
+        [
+          "VRK63S",
+          1
+        ],
+        [
+          "VW63",
+          1
+        ],
+        [
+          "VNL6636VA560",
+          1
+        ],
+        [
+          "VIK636",
+          1
+        ],
+        [
+          "VNK663",
+          1
+        ],
+        [
+          "RSIC598E",
+          1
+        ],
+        [
+          "N5855E",
+          1
+        ],
+        [
+          "C585EWNC58558",
+          1
+        ]
+      ]
+    },
+    {
+      "video": "WhatsApp Video 2026-09-18 at 11.05.50.mp4",
+      "durationSeconds": 3.967,
+      "sourceFps": 60.0,
+      "evaluationFps": 7.5,
+      "expectedPlates": [],
+      "sampledFrames": 30,
+      "framesWithDetections": 20,
+      "detectionCoverage": 0.667,
+      "firstSceneDetectionSeconds": 0.0,
+      "totalDetections": 22,
+      "maxSimultaneous": 2,
+      "detectorDiagnostics": {
+        "aboveConfidence": 159,
+        "rejectedMinSize": 0,
+        "rejectedAspect": 0,
+        "preNms": 159,
+        "nmsSuppressed": 137,
+        "final": 22
+      },
+      "plateResults": [],
+      "exactRecognitionRecall": null,
+      "latencyMs": {
+        "detectorMedian": 49.08,
+        "detectorP95": 50.74,
+        "ocrMedianPerCrop": 72.91,
+        "ocrP95PerCrop": 78.07
+      },
+      "wallTimeSeconds": 2.8,
+      "processingThroughputFps": 10.71,
+      "topRawOcr": [
+        [
+          "AMA4588",
+          3
+        ],
+        [
+          "AMA469",
+          2
+        ],
+        [
+          "AMA458",
+          2
+        ],
+        [
+          "A4588",
+          1
+        ],
+        [
+          "A046",
+          1
+        ],
+        [
+          "AA458L",
+          1
+        ],
+        [
+          "A4",
+          1
+        ],
+        [
+          "ANA4889ANAGSN",
+          1
+        ],
+        [
+          "ANA4609",
+          1
+        ],
+        [
+          "AMA45",
+          1
+        ],
+        [
+          "AMA4",
+          1
+        ],
+        [
+          "AM46",
+          1
+        ]
+      ]
+    },
+    {
+      "video": "WhatsApp Video 2026-09-18 at 11.05.54.mp4",
+      "durationSeconds": 7.3,
+      "sourceFps": 30.0,
+      "evaluationFps": 7.5,
+      "expectedPlates": [],
+      "sampledFrames": 55,
+      "framesWithDetections": 55,
+      "detectionCoverage": 1.0,
+      "firstSceneDetectionSeconds": 0.0,
+      "totalDetections": 85,
+      "maxSimultaneous": 2,
+      "detectorDiagnostics": {
+        "aboveConfidence": 779,
+        "rejectedMinSize": 0,
+        "rejectedAspect": 0,
+        "preNms": 779,
+        "nmsSuppressed": 694,
+        "final": 85
+      },
+      "plateResults": [],
+      "exactRecognitionRecall": null,
+      "latencyMs": {
+        "detectorMedian": 49.63,
+        "detectorP95": 51.38,
+        "ocrMedianPerCrop": 75.81,
+        "ocrP95PerCrop": 80.37
+      },
+      "wallTimeSeconds": 9.15,
+      "processingThroughputFps": 6.01,
+      "topRawOcr": [
+        [
+          "SYQ9096",
+          9
+        ],
+        [
+          "WYS460",
+          7
+        ],
+        [
+          "BOF902BUF902",
+          4
+        ],
+        [
+          "VOG53",
+          4
+        ],
+        [
+          "BOF902",
+          3
+        ],
+        [
+          "VOG534",
+          3
+        ],
+        [
+          "BOF9022",
+          2
+        ],
+        [
+          "VDG5524VUG5534",
+          2
+        ],
+        [
+          "14604460",
+          1
+        ],
+        [
+          "SYOSYQ",
+          1
+        ],
+        [
+          "WYS40",
+          1
+        ],
+        [
+          "WY460",
+          1
+        ]
+      ]
+    },
+    {
+      "video": "WhatsApp Video 2026-09-18 at 11.05.56.mp4",
+      "durationSeconds": 5.033,
+      "sourceFps": 30.0,
+      "evaluationFps": 7.5,
+      "expectedPlates": [],
+      "sampledFrames": 38,
+      "framesWithDetections": 31,
+      "detectionCoverage": 0.816,
+      "firstSceneDetectionSeconds": 0.0,
+      "totalDetections": 56,
+      "maxSimultaneous": 5,
+      "detectorDiagnostics": {
+        "aboveConfidence": 395,
+        "rejectedMinSize": 0,
+        "rejectedAspect": 0,
+        "preNms": 395,
+        "nmsSuppressed": 339,
+        "final": 56
+      },
+      "plateResults": [],
+      "exactRecognitionRecall": null,
+      "latencyMs": {
+        "detectorMedian": 49.73,
+        "detectorP95": 51.66,
+        "ocrMedianPerCrop": 73.57,
+        "ocrP95PerCrop": 80.71
+      },
+      "wallTimeSeconds": 4.88,
+      "processingThroughputFps": 7.79,
+      "topRawOcr": [
+        [
+          "VGA126",
+          5
+        ],
+        [
+          "MCT8619",
+          3
+        ],
+        [
+          "00769",
+          3
+        ],
+        [
+          "0069",
+          2
+        ],
+        [
+          "VF3296",
+          2
+        ],
+        [
+          "VNF3296",
+          2
+        ],
+        [
+          "VME708",
+          2
+        ],
+        [
+          "MCTO619",
+          1
+        ],
+        [
+          "YE089",
+          1
+        ],
+        [
+          "CFJG",
+          1
+        ],
+        [
+          "NCT8619",
+          1
+        ],
+        [
+          "LCEJ661CFJ6611",
+          1
+        ]
+      ]
+    },
+    {
+      "video": "WhatsApp Video 2026-09-18 at 11.05.59.mp4",
+      "durationSeconds": 4.167,
+      "sourceFps": 30.0,
+      "evaluationFps": 7.5,
+      "expectedPlates": [],
+      "sampledFrames": 32,
+      "framesWithDetections": 12,
+      "detectionCoverage": 0.375,
+      "firstSceneDetectionSeconds": 0.0,
+      "totalDetections": 22,
+      "maxSimultaneous": 3,
+      "detectorDiagnostics": {
+        "aboveConfidence": 87,
+        "rejectedMinSize": 0,
+        "rejectedAspect": 0,
+        "preNms": 87,
+        "nmsSuppressed": 65,
+        "final": 22
+      },
+      "plateResults": [],
+      "exactRecognitionRecall": null,
+      "latencyMs": {
+        "detectorMedian": 49.64,
+        "detectorP95": 50.94,
+        "ocrMedianPerCrop": 77.58,
+        "ocrP95PerCrop": 80.31
+      },
+      "wallTimeSeconds": 3.5,
+      "processingThroughputFps": 9.14,
+      "topRawOcr": [
+        [
+          "FELEE",
+          2
+        ],
+        [
+          "WO5A",
+          1
+        ],
+        [
+          "NO5574CND574",
+          1
+        ],
+        [
+          "DSINLTSIN",
+          1
+        ],
+        [
+          "M0H",
+          1
+        ],
+        [
+          "FELLE",
+          1
+        ],
+        [
+          "11284AM128",
+          1
+        ],
+        [
+          "MM1284",
+          1
+        ],
+        [
+          "FELEEY",
+          1
+        ],
+        [
+          "IAH28AA",
+          1
+        ],
+        [
+          "PODIPUDR",
+          1
+        ],
+        [
+          "IAH1284WAME",
+          1
+        ]
+      ]
+    }
+  ]
+}

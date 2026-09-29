@@ -1,0 +1,189 @@
+{
+  "date": "2026-09-26",
+  "environment": "Local headless Chrome on macOS, normal provider selection (direct WASM compatibility path)",
+  "method": "One Mula click; subsequent clips automatically prepare and resume. Real-time playback, then pending OCR drain. Labels are used only for comparison, never supplied to recognition.",
+  "limitations": [
+    "Desktop replay does not validate a moving camera at 20\u201350 km/h.",
+    "Sample 11 remains below seven-plate acceptance; do not treat partial recall as a pass.",
+    "Unlabelled clips list observed outputs only, not verified accuracy."
+  ],
+  "runs": [
+    {
+      "clip": 11,
+      "backend": "auto",
+      "endedAt": 7.047,
+      "completedAt": 8.365,
+      "error": null,
+      "publishedPlates": [
+        "CFJ6611",
+        "MCT8619",
+        "VEQ8471",
+        "VGA1268",
+        "VME7108",
+        "VNF3296"
+      ],
+      "verification": {
+        "expected": [
+          "CCC769",
+          "CFJ6611",
+          "MCT8619",
+          "VEQ8471",
+          "VGA1268",
+          "VME7108",
+          "VNF3296"
+        ],
+        "correct": [
+          "CFJ6611",
+          "MCT8619",
+          "VEQ8471",
+          "VGA1268",
+          "VME7108",
+          "VNF3296"
+        ],
+        "missing": [
+          "CCC769"
+        ],
+        "unexpected": [],
+        "passed": false
+      }
+    },
+    {
+      "clip": 2,
+      "backend": "auto",
+      "endedAt": 2.549,
+      "completedAt": 2.987,
+      "error": null,
+      "publishedPlates": [
+        "SWF3587",
+        "VNM1212"
+      ],
+      "verification": {
+        "expected": [
+          "SWF3587",
+          "VNM1212"
+        ],
+        "correct": [
+          "SWF3587",
+          "VNM1212"
+        ],
+        "missing": [],
+        "unexpected": [],
+        "passed": true
+      }
+    },
+    {
+      "clip": 20,
+      "backend": "auto",
+      "endedAt": 6.28,
+      "completedAt": 6.803,
+      "error": null,
+      "publishedPlates": [
+        "JRX9936",
+        "VGS3692"
+      ]
+    },
+    {
+      "clip": 16,
+      "backend": "auto",
+      "endedAt": 1.903,
+      "completedAt": 3.028,
+      "error": null,
+      "publishedPlates": [
+        "WA1420T"
+      ]
+    },
+    {
+      "clip": 1,
+      "backend": "auto",
+      "endedAt": 7.034,
+      "completedAt": 22.731,
+      "error": null,
+      "publishedPlates": [
+        "BNC115"
+      ],
+      "verification": {
+        "expected": [
+          "BNC115"
+        ],
+        "correct": [
+          "BNC115"
+        ],
+        "missing": [],
+        "unexpected": [],
+        "passed": true
+      }
+    },
+    {
+      "clip": 3,
+      "backend": "auto",
+      "endedAt": 3.751,
+      "completedAt": 4.188,
+      "error": null,
+      "publishedPlates": [
+        "ANN7569"
+      ],
+      "verification": {
+        "expected": [
+          "ANN7569"
+        ],
+        "correct": [
+          "ANN7569"
+        ],
+        "missing": [],
+        "unexpected": [],
+        "passed": true
+      }
+    },
+    {
+      "clip": 10,
+      "backend": "auto",
+      "endedAt": 7.561,
+      "completedAt": 8.984,
+      "error": null,
+      "publishedPlates": [
+        "BQF902",
+        "SYQ9096",
+        "VDG5534",
+        "WYS4460"
+      ]
+    },
+    {
+      "run": "repeat",
+      "clip": 11,
+      "backend": "auto",
+      "endedAt": 7.176,
+      "completedAt": 7.941,
+      "error": null,
+      "publishedPlates": [
+        "MCT8619",
+        "VGA1268",
+        "VME7108",
+        "VNF3296"
+      ],
+      "verification": {
+        "expected": [
+          "CCC769",
+          "CFJ6611",
+          "MCT8619",
+          "VEQ8471",
+          "VGA1268",
+          "VME7108",
+          "VNF3296"
+        ],
+        "correct": [
+          "MCT8619",
+          "VGA1268",
+          "VME7108",
+          "VNF3296"
+        ],
+        "missing": [
+          "CCC769",
+          "CFJ6611",
+          "VEQ8471"
+        ],
+        "unexpected": [],
+        "passed": false
+      }
+    }
+  ]
+}

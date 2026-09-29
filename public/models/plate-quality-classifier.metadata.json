@@ -1,0 +1,56 @@
+{
+  "modelName": "plate-quality-classifier",
+  "format": "onnx",
+  "opset": 17,
+  "inputWidth": 224,
+  "inputHeight": 224,
+  "layout": "NCHW",
+  "colorSpace": "RGB",
+  "resizeMode": "letterbox",
+  "normalization": {
+    "scale": 0.00392156862745098,
+    "mean": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "std": [
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  "classes": [
+    "BAD_ANGLE",
+    "GLARE_REFLECTION",
+    "GOOD",
+    "LOW_CONTRAST",
+    "MOTION_BLUR",
+    "OCCLUDED",
+    "OUT_OF_FOCUS",
+    "OVEREXPOSED",
+    "TOO_SMALL",
+    "UNDEREXPOSED"
+  ],
+  "classCount": 10,
+  "routingPolicy": {
+    "tier1_immediate": [
+      "GOOD"
+    ],
+    "tier2_salvageable_enhanced": [
+      "LOW_CONTRAST",
+      "UNDEREXPOSED",
+      "OVEREXPOSED"
+    ],
+    "tier3_difficult_deferred": [
+      "MOTION_BLUR",
+      "OUT_OF_FOCUS",
+      "BAD_ANGLE",
+      "GLARE_REFLECTION",
+      "OCCLUDED",
+      "TOO_SMALL"
+    ],
+    "tier4_unreadable_reject": []
+  },
+  "exportTimestamp": "2026-09-19T00:33:37Z"
+}

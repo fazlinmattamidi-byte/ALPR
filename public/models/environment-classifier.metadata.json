@@ -1,0 +1,136 @@
+{
+  "model": "PlateQ Environment Intelligence YOLOv8 Classification",
+  "framework": "YOLOv8 Classification",
+  "dataset": "BDD100K",
+  "dataset_url": "https://bdd-data.berkeley.edu/",
+  "dataset_github": "https://github.com/bdd100k/bdd100k",
+  "classes": [
+    "BACKLIGHT",
+    "DAY",
+    "FOG",
+    "GLARE",
+    "GOOD_CONDITION",
+    "HEAVY_RAIN",
+    "HIGHWAY",
+    "LOW_LIGHT",
+    "NIGHT",
+    "PARKING",
+    "RAIN",
+    "TRAFFIC",
+    "TUNNEL"
+  ],
+  "expected_classes": [
+    "BACKLIGHT",
+    "DAY",
+    "FOG",
+    "GLARE",
+    "GOOD_CONDITION",
+    "HEAVY_RAIN",
+    "HIGHWAY",
+    "LOW_LIGHT",
+    "NIGHT",
+    "PARKING",
+    "RAIN",
+    "TRAFFIC",
+    "TUNNEL"
+  ],
+  "imgsz": 224,
+  "opset": 17,
+  "base_model": "yolov8n-cls.pt",
+  "weights": "runs/classify/runs/classify/plateq-bdd100k-environment/weights/best.pt",
+  "onnx": "public/models/environment-classifier.onnx",
+  "source_metadata": {
+    "source": "BDD100K",
+    "source_url": "https://bdd-data.berkeley.edu/",
+    "source_github": "https://github.com/bdd100k/bdd100k",
+    "classes": [
+      "BACKLIGHT",
+      "DAY",
+      "FOG",
+      "GLARE",
+      "GOOD_CONDITION",
+      "HEAVY_RAIN",
+      "HIGHWAY",
+      "LOW_LIGHT",
+      "NIGHT",
+      "PARKING",
+      "RAIN",
+      "TRAFFIC",
+      "TUNNEL"
+    ],
+    "class_mapping_order": [
+      "scene=tunnel -> TUNNEL",
+      "weather=foggy -> FOG",
+      "weather=rainy + low visibility stats -> HEAVY_RAIN",
+      "weather=rainy -> RAIN",
+      "timeofday=night -> NIGHT",
+      "timeofday=dawn/dusk -> LOW_LIGHT",
+      "scene=highway -> HIGHWAY",
+      "scene=parking lot -> PARKING",
+      "image stats glare -> GLARE",
+      "image stats backlight -> BACKLIGHT",
+      "road-user count threshold -> TRAFFIC",
+      "clear/partly cloudy daytime normal stats -> GOOD_CONDITION",
+      "timeofday=daytime -> DAY"
+    ],
+    "splits": {
+      "train": {
+        "labels": "labels/det_v2_train_release.json",
+        "images": "bdd100k/images/100k/train",
+        "counts": {
+          "GOOD_CONDITION": 500,
+          "LOW_LIGHT": 500,
+          "NIGHT": 500,
+          "HEAVY_RAIN": 500,
+          "TRAFFIC": 500,
+          "HIGHWAY": 500,
+          "DAY": 500,
+          "RAIN": 500,
+          "BACKLIGHT": 330,
+          "PARKING": 239,
+          "FOG": 130,
+          "TUNNEL": 129,
+          "GLARE": 61
+        },
+        "skipped": {
+          "capped_NIGHT": 25177,
+          "capped_TRAFFIC": 18175,
+          "capped_HIGHWAY": 7856,
+          "capped_DAY": 4452,
+          "capped_LOW_LIGHT": 4183,
+          "unmapped": 10,
+          "capped_RAIN": 2112,
+          "capped_HEAVY_RAIN": 1951,
+          "capped_GOOD_CONDITION": 1058
+        }
+      },
+      "val": {
+        "labels": "labels/det_v2_val_release.json",
+        "images": "bdd100k/images/100k/val",
+        "counts": {
+          "TRAFFIC": 500,
+          "NIGHT": 500,
+          "RAIN": 418,
+          "DAY": 500,
+          "LOW_LIGHT": 500,
+          "TUNNEL": 27,
+          "HIGHWAY": 500,
+          "HEAVY_RAIN": 318,
+          "GOOD_CONDITION": 232,
+          "BACKLIGHT": 40,
+          "PARKING": 28,
+          "FOG": 13,
+          "GLARE": 7
+        },
+        "skipped": {
+          "unmapped": 5,
+          "capped_NIGHT": 3133,
+          "capped_TRAFFIC": 2230,
+          "capped_HIGHWAY": 703,
+          "capped_LOW_LIGHT": 222,
+          "capped_DAY": 124
+        }
+      }
+    }
+  }
+}

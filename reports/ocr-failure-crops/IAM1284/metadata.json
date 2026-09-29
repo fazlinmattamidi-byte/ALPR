@@ -1,0 +1,96 @@
+{
+  "video": "WhatsApp Video 2026-09-18 at 11.05.59.mp4",
+  "observedText": "IAM1284",
+  "found": true,
+  "frameIndex": 103,
+  "timestampSeconds": 3.4333,
+  "detectorConfidence": 0.2791,
+  "bbox": [
+    266.07,
+    824.45,
+    82.06,
+    62.95
+  ],
+  "comparisons": [
+    {
+      "variant": "detector_tight",
+      "cropSize": [
+        82,
+        63
+      ],
+      "ocrText": "IAM1284",
+      "ocrConfidence": 0.3301,
+      "layout": "SPLIT"
+    },
+    {
+      "variant": "production_padded",
+      "cropSize": [
+        97,
+        78
+      ],
+      "ocrText": "IAM1284",
+      "ocrConfidence": 0.317,
+      "layout": "SPLIT"
+    },
+    {
+      "variant": "production_inner",
+      "cropSize": [
+        97,
+        78
+      ],
+      "ocrText": "IAM1284",
+      "ocrConfidence": 0.3088,
+      "layout": "SPLIT"
+    },
+    {
+      "variant": "wide_padded",
+      "cropSize": [
+        112,
+        88
+      ],
+      "ocrText": "A2WE",
+      "ocrConfidence": 0.3838,
+      "layout": "COMPACT_SPLIT"
+    },
+    {
+      "variant": "clahe",
+      "cropSize": [
+        97,
+        78
+      ],
+      "ocrText": "IAM1284",
+      "ocrConfidence": 0.2374,
+      "layout": "SPLIT"
+    },
+    {
+      "variant": "sharpen",
+      "cropSize": [
+        97,
+        78
+      ],
+      "ocrText": "IH128",
+      "ocrConfidence": 0.2494,
+      "layout": "SPLIT"
+    },
+    {
+      "variant": "deskew_minus_5",
+      "cropSize": [
+        112,
+        88
+      ],
+      "ocrText": "M28",
+      "ocrConfidence": 0.214,
+      "layout": "SPLIT"
+    },
+    {
+      "variant": "deskew_plus_5",
+      "cropSize": [
+        112,
+        88
+      ],
+      "ocrText": "A12ANLE",
+      "ocrConfidence": 0.4506,
+      "layout": "COMPACT_SPLIT"
+    }
+  ]
+}

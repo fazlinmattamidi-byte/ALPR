@@ -1,0 +1,46 @@
+{
+  "datasetName": "TRACK Malaysian ANPR 30-video development set",
+  "updatedAt": "2026-09-19T00:00:00+08:00",
+  "currentVideoCount": 12,
+  "targetVideoCount": 30,
+  "policy": {
+    "groupSplitBy": "source video or vehicle identity",
+    "catalogueValuesMayGuideInference": false,
+    "heldOutTestMayBeUsedForTuning": false,
+    "copyrightOrUnlicensedDownloadsAllowed": false
+  },
+  "existing": [
+    { "id": "clip-1", "status": "AVAILABLE", "role": "VALIDATION" },
+    { "id": "clip-2", "status": "AVAILABLE", "role": "VALIDATION" },
+    { "id": "clip-3", "status": "AVAILABLE", "role": "VALIDATION" },
+    { "id": "clip-4", "status": "AVAILABLE", "role": "VALIDATION" },
+    { "id": "clip-5", "status": "AVAILABLE", "role": "VALIDATION" },
+    { "id": "clip-6", "status": "AVAILABLE", "role": "VALIDATION" },
+    { "id": "clip-7", "status": "AVAILABLE", "role": "VALIDATION" },
+    { "id": "clip-8", "status": "AVAILABLE", "role": "VALIDATION" },
+    { "id": "clip-9", "status": "AVAILABLE", "role": "VALIDATION" },
+    { "id": "clip-10", "status": "AVAILABLE", "role": "VALIDATION" },
+    { "id": "clip-11", "status": "AVAILABLE", "role": "VALIDATION" },
+    { "id": "clip-12", "status": "AVAILABLE", "role": "VALIDATION" }
+  ],
+  "requiredIntake": [
+    { "id": "clip-13", "scenario": "small distant plate in daylight", "role": "TRAIN", "status": "MISSING_SOURCE" },
+    { "id": "clip-14", "scenario": "severely slanted front plate", "role": "TRAIN", "status": "MISSING_SOURCE" },
+    { "id": "clip-15", "scenario": "severely slanted rear plate", "role": "TRAIN", "status": "MISSING_SOURCE" },
+    { "id": "clip-16", "scenario": "two-line plate approaching", "role": "TRAIN", "status": "MISSING_SOURCE" },
+    { "id": "clip-17", "scenario": "two-line plate departing", "role": "TRAIN", "status": "MISSING_SOURCE" },
+    { "id": "clip-18", "scenario": "three or more simultaneous vehicles", "role": "TRAIN", "status": "MISSING_SOURCE" },
+    { "id": "clip-19", "scenario": "close plate partly outside frame", "role": "TRAIN", "status": "MISSING_SOURCE" },
+    { "id": "clip-20", "scenario": "night plate under headlight glare", "role": "TRAIN", "status": "MISSING_SOURCE" },
+    { "id": "clip-21", "scenario": "rain or wet-road reflection", "role": "VALIDATION", "status": "MISSING_SOURCE" },
+    { "id": "clip-22", "scenario": "partial plate occlusion", "role": "VALIDATION", "status": "MISSING_SOURCE" },
+    { "id": "clip-23", "scenario": "motorcycle plate", "role": "VALIDATION", "status": "MISSING_SOURCE" },
+    { "id": "clip-24", "scenario": "fast lateral crossing", "role": "VALIDATION", "status": "MISSING_SOURCE" },
+    { "id": "clip-25", "scenario": "repeated adjacent characters", "role": "TEST", "status": "MISSING_SOURCE" },
+    { "id": "clip-26", "scenario": "black plate with low contrast", "role": "TEST", "status": "MISSING_SOURCE" },
+    { "id": "clip-27", "scenario": "bright reflective plate", "role": "TEST", "status": "MISSING_SOURCE" },
+    { "id": "clip-28", "scenario": "dense parking-lot pan", "role": "TEST", "status": "MISSING_SOURCE" },
+    { "id": "clip-29", "scenario": "moving camera and moving vehicle", "role": "TEST", "status": "MISSING_SOURCE" },
+    { "id": "clip-30", "scenario": "mixed single-line and two-line plates", "role": "TEST", "status": "MISSING_SOURCE" }
+  ]
+}
